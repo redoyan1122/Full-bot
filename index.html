@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aviator Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Aviator Crash Game</h1>
+    <div class="game-area">
+      <div class="multiplier" id="multiplier">1.00x</div>
+      <div class="plane" id="plane">🛩️</div>
+    </div>
+
+    <div class="controls">
+      <input type="number" id="betAmount" placeholder="Enter your bet" />
+      <button id="startBtn">Start Bet</button>
+      <button id="cashoutBtn" disabled>Cash Out</button>
+      <p id="resultMessage"></p>
+      <p>Balance: <span id="balance">1000</span> BDT</p>
+    </div>
+  </div>
+
+  <audio id="crashSound" src="crash.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
